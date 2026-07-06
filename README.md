@@ -25,15 +25,16 @@
 
 - [📖 Project Overview](#-project-overview)
 - [✨ Key Features](#-key-features)
-- [🏗️ System Architecture](#️-system-architecture)
+- [🏗️ System Architecture](#-system-architecture)
+- [🖼️ Gallery & Visual Showcase](#-gallery--visual-showcase)
 - [💻 Tech Stack](#-tech-stack)
 - [📁 Folder Structure](#-folder-structure)
 - [🚀 Installation & Setup](#-installation--setup)
-- [⚙️ Environment Variables](#️-environment-variables)
+- [⚙️ Environment Variables](#-environment-variables)
 - [🤖 Multi-Agent Workflow](#-multi-agent-workflow)
 - [📡 API Documentation](#-api-documentation)
 - [🧪 Simulation Scenarios](#-simulation-scenarios)
-- [🗺️ Roadmap](#️-roadmap)
+- [🗺️ Roadmap](#-roadmap)
 - [🤝 Contributing](#-contributing)
 - [📝 License](#-license)
 - [📞 Contact & Support](#-contact--support)
@@ -105,6 +106,54 @@ graph TD
 
 ---
 
+## 🖼️ Gallery & Visual Showcase
+
+### 1. High-Quality Digital Twin Background
+Below is the cinematic visualization of Mumbai's Bandra-Worli Sea Link and smart city digital twin networks:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/abhishekraj10001/nationtwin-ai/main/marketing/mumbai_digital_twin_bg.png" alt="Mumbai Digital Twin Background" width="800" style="border-radius: 12px; border: 2px solid rgba(139, 92, 246, 0.4); box-shadow: 0 8px 30px rgba(0,0,0,0.5);" />
+</p>
+
+### 2. Framed Interface Screenshots
+
+The system console runs in a glassmorphic dark-mode environment. Below are the key dashboards:
+
+<table align="center">
+  <tr>
+    <td width="50%" align="center">
+      <b>1. Operator Console</b><br/>
+      <img src="https://raw.githubusercontent.com/abhishekraj10001/nationtwin-ai/main/marketing/screenshots/framed_dashboard.png" width="100%" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);"/>
+    </td>
+    <td width="50%" align="center">
+      <b>2. Geographic GIS Map</b><br/>
+      <img src="https://raw.githubusercontent.com/abhishekraj10001/nationtwin-ai/main/marketing/screenshots/framed_map.png" width="100%" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <b>3. World Model Graph</b><br/>
+      <img src="https://raw.githubusercontent.com/abhishekraj10001/nationtwin-ai/main/marketing/screenshots/framed_world_model.png" width="100%" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);"/>
+    </td>
+    <td width="50%" align="center">
+      <b>4. Simulation Sandbox</b><br/>
+      <img src="https://raw.githubusercontent.com/abhishekraj10001/nationtwin-ai/main/marketing/screenshots/framed_simulation.png" width="100%" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <b>5. Risk Predictions</b><br/>
+      <img src="https://raw.githubusercontent.com/abhishekraj10001/nationtwin-ai/main/marketing/screenshots/framed_predictions.png" width="100%" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);"/>
+    </td>
+    <td width="50%" align="center">
+      <b>6. 12-Agent Consensus Grid</b><br/>
+      <img src="https://raw.githubusercontent.com/abhishekraj10001/nationtwin-ai/main/marketing/screenshots/framed_agents.png" width="100%" style="border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);"/>
+    </td>
+  </tr>
+</table>
+
+---
+
 ## 💻 Tech Stack
 
 | Component | Technology | Description |
@@ -141,6 +190,9 @@ graph TD
 │   ├── package.json         # Node dependencies
 │   └── Dockerfile           # Frontend deployment config
 └── marketing/               # Audio, Video & Graphic assets generator
+    ├── screenshots/         # Framed application screenshots
+    ├── mumbai_digital_twin_bg.png # High-quality digital twin render background
+    └── thumbnail.png        # Generated YouTube marketing thumbnail
 ```
 
 ---
