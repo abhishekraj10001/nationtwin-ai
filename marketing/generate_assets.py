@@ -310,11 +310,17 @@ def generate_thumbnail():
     """Creates a high-converting, professional YouTube-style thumbnail at exactly 560 x 280 px."""
     log("Generating high-converting 560x280 px thumbnail...")
     
-    # 1. Base Layer: Load the Map view and fit it
-    map_raw_path = find_screenshot("map_*.png")
-    raw_im = Image.open(map_raw_path)
+    # 1. Base Layer: Load the high-quality Mumbai digital twin background
+    bg_path = os.path.join(MARKETING_DIR, "mumbai_digital_twin_bg.png")
+    if os.path.exists(bg_path):
+        log(f"Loading high-quality background from: {bg_path}")
+        raw_im = Image.open(bg_path)
+    else:
+        log("mumbai_digital_twin_bg.png not found, falling back to map screenshot...")
+        map_raw_path = find_screenshot("map_*.png")
+        raw_im = Image.open(map_raw_path)
     
-    # Crop map to 560x280 centered
+    # Crop map/bg to 560x280 centered
     im_w, im_h = raw_im.size
     target_ratio = 560.0 / 280.0
     if im_w / im_h > target_ratio:
@@ -326,8 +332,12 @@ def generate_thumbnail():
         crop_y = (im_h - new_h) // 2
         map_cropped = raw_im.crop((0, crop_y, im_w, crop_y + new_h)).resize((560, 280), Image.Resampling.LANCZOS)
 
-    # 2. Add subtle blur to map background
-    map_bg = map_cropped.filter(ImageFilter.GaussianBlur(1.5))
+    # 2. Add subtle blur to background (only if we fell back to map screenshot, otherwise keep AI art crisp)
+    if os.path.exists(bg_path):
+        map_bg = map_cropped # Keep the AI generated image sharp and clear
+    else:
+        map_bg = map_cropped.filter(ImageFilter.GaussianBlur(1.5))
+        
     draw = ImageDraw.Draw(map_bg, "RGBA")
     
     # Dark vignette/gradient overlay from left (dense black) to right (translucent black)
@@ -399,7 +409,18 @@ def generate_thumbnail():
     # Save output
     thumb_path = os.path.join(OUTPUT_DIR, "thumbnail.png")
     map_bg.convert("RGB").save(thumb_path)
+    
+    # Also save to marketing/thumbnail.png in workspace
+    workspace_thumb_path = os.path.join(MARKETING_DIR, "thumbnail.png")
+    map_bg.convert("RGB").save(workspace_thumb_path)
+    
+    # Save to the current conversation's artifact folder
+    current_chat_artifact_path = "/home/abhishekraj10001/.gemini/antigravity-ide/brain/3f16175f-0b5b-4c47-9de4-df57cca65e9d/thumbnail.png"
+    map_bg.convert("RGB").save(current_chat_artifact_path)
+    
     log(f"Thumbnail rendered and saved to: {thumb_path}")
+    log(f"Thumbnail copied to workspace: {workspace_thumb_path}")
+    log(f"Thumbnail saved to artifacts: {current_chat_artifact_path}")
 
 # -------------------------------------------------------------
 # Video Builder & Stitcher
