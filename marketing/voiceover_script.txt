@@ -1,0 +1,20 @@
+[Section 1: Introduction]
+Welcome to NationTwin A.I., the living digital twin of Mumbai. Designed for advanced municipal monitoring, it integrates twelve autonomous agent blocks to synchronize critical infrastructure, weather, health, and transport networks.
+
+[Section 2: Dashboard Overview]
+The Operator Console provides a comprehensive look at the city's heartbeat. Here, operators can track real-time telemetry, monitor active crisis warnings, and audit the state of hospitals, traffic, and energy grids instantly.
+
+[Section 3: Dependency Graph]
+At the heart of the system is the World Model. This directed dependency graph maps relationships across sectors, showing how monsoons impact reservoir levels, traffic diverted from hospital routes, and grid loads supplying medical wards.
+
+[Section 4: Simulation Sandbox]
+Planners can simulate extreme stress scenarios like monsoon rain surges, power plant shutdowns, or road closures, allowing the engine to chart recovery curves, projected financial costs, and population impact.
+
+[Section 5: Risk Predictions]
+The Predictive Intelligence panel runs advanced threat projections hours in advance, calculating flood risks, traffic bottlenecks, and energy grids approaching critical capacity before they cascade.
+
+[Section 6: Interactive Map]
+The Digital Twin Map layers geographical I.S. data, showing glowing sensor beacons, active highway traffic status, pollution density levels, and dynamic heatmaps of cascading municipal risks.
+
+[Section 7: Outro]
+Behind the scenes, independent agent blocks run continuous consensus cycles to keep the twin up to date. Empower your city with automated decision intelligence. Experience NationTwin A.I. today.
