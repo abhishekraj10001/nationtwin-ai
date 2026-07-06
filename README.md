@@ -15,7 +15,7 @@
 
 <p align="center">
   <a href="https://youtu.be/Y3SEDSnHtDE" target="_blank">
-    <img src="https://raw.githubusercontent.com/abhishekraj10001/nationtwin-ai/main/marketing/thumbnail.png" alt="NationTwin AI Hero Banner" width="800" style="border-radius: 12px; border: 2px solid rgba(139, 92, 246, 0.4); box-shadow: 0 8px 30px rgba(0,0,0,0.5);" />
+    <img src="https://raw.githubusercontent.com/abhishekraj10001/nationtwin-ai/main/marketing/hero_banner.png" alt="NationTwin AI Hero Banner" width="800" style="border-radius: 12px; border: 2px solid rgba(139, 92, 246, 0.4); box-shadow: 0 8px 30px rgba(0,0,0,0.5);" />
   </a>
 </p>
 
@@ -191,6 +191,7 @@ The system console runs in a glassmorphic dark-mode environment. Below are the k
 │   └── Dockerfile           # Frontend deployment config
 └── marketing/               # Audio, Video & Graphic assets generator
     ├── screenshots/         # Framed application screenshots
+    ├── hero_banner.png      # High-resolution uncropped hero banner image
     ├── mumbai_digital_twin_bg.png # High-quality digital twin render background
     └── thumbnail.png        # Generated YouTube marketing thumbnail
 ```
