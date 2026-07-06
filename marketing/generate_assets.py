@@ -30,43 +30,43 @@ SECTIONS = [
     {
         "id": "landing",
         "screenshot_glob": "landing_page_*.png",
-        "text": "Welcome to NationTwin A.I., the living digital twin of Mumbai. Designed for advanced municipal monitoring, it integrates twelve autonomous agent blocks to synchronize critical infrastructure, weather, health, and transport networks.",
+        "text": "Welcome to NationTwin A.I., the living digital twin of Mumbai, synchronizing infrastructure, weather, health, and transit networks.",
         "border_color": (16, 185, 129),  # Emerald green
     },
     {
         "id": "dashboard",
         "screenshot_glob": "dashboard_overview_*.png",
-        "text": "The Operator Console provides a comprehensive look at the city's heartbeat. Here, operators can track real-time telemetry, monitor active crisis warnings, and audit the state of hospitals, traffic, and energy grids instantly.",
+        "text": "The Operator Console tracks Mumbai's real-time telemetry, active crisis alerts, hospitals, traffic congestion, and energy grids.",
         "border_color": (139, 92, 246),  # Violet
     },
     {
         "id": "world_model",
         "screenshot_glob": "world_model_*.png",
-        "text": "At the heart of the system is the World Model. This directed dependency graph maps relationships across sectors, showing how monsoons impact reservoir levels, traffic diverted from hospital routes, and grid loads supplying medical wards.",
+        "text": "The World Model maps dependency networks, showing how weather impacts reservoirs, road speeds, and hospital power grids.",
         "border_color": (6, 182, 212),  # Cyan
     },
     {
         "id": "simulation",
         "screenshot_glob": "simulation_*.png",
-        "text": "Planners can simulate extreme stress scenarios like monsoon rain surges, power plant shutdowns, or road closures, allowing the engine to chart recovery curves, projected financial costs, and population impact.",
+        "text": "Simulate extreme monsoons, power grid failures, and road blockages to chart recovery curves, financial costs, and community impact.",
         "border_color": (245, 158, 11),  # Amber
     },
     {
         "id": "predictions",
         "screenshot_glob": "predictions_*.png",
-        "text": "The Predictive Intelligence panel runs advanced threat projections hours in advance, calculating flood risks, traffic bottlenecks, and energy grids approaching critical capacity before they cascade.",
+        "text": "The Predictive Intelligence panel runs advanced threat models to forecast floods, traffic gridlocks, and power overloads hours early.",
         "border_color": (239, 68, 68),  # Rose
     },
     {
         "id": "map",
         "screenshot_glob": "map_*.png",
-        "text": "The Digital Twin Map layers geographical I.S. data, showing glowing sensor beacons, active highway traffic status, pollution density levels, and dynamic heatmaps of cascading municipal risks.",
+        "text": "The Digital Twin Map layers real-time geographical data, sensor beacons, traffic speeds, and dynamic risk heatmaps.",
         "border_color": (99, 102, 241),  # Indigo
     },
     {
         "id": "agents",
         "screenshot_glob": "agents_*.png",
-        "text": "Behind the scenes, independent agent blocks run continuous consensus cycles to keep the twin up to date. Empower your city with automated decision intelligence. Experience NationTwin A.I. today.",
+        "text": "Twelve independent agent blocks run continuous consensus cycles to keep the digital twin updated. Experience NationTwin A.I. today!",
         "border_color": (16, 185, 129),  # Emerald green
     }
 ]
