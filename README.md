@@ -5,8 +5,11 @@
 [![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org)
 [![React Flow](https://img.shields.io/badge/React_Flow-FF007F?style=for-the-badge&logo=react&logoColor=white)](https://reactflow.dev)
 [![Leaflet GIS](https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white)](https://leafletjs.com)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://nationtwin-ai.vercel.app/)
 
 **NationTwin AI** is a modern, visually stunning, multi-agent cognitive digital twin designed to monitor, simulate, and recommend municipal responses for the city of Mumbai. Built with a pluggable architecture, it coordinates **12 independent agent blocks** (representing weather, transit, healthcare, energy, and emergency departments) to predict cascading system failures and optimize mitigation pathways under extreme stress.
+
+🔗 **Live Demo**: [https://nationtwin-ai.vercel.app/](https://nationtwin-ai.vercel.app/)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/abhishekraj10001/nationtwin-ai/main/marketing/thumbnail.png" alt="NationTwin AI Hero Banner" width="800" style="border-radius: 12px; border: 2px solid rgba(139, 92, 246, 0.4); box-shadow: 0 8px 30px rgba(0,0,0,0.5);" />
